@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/igor-saikin-8LE9Z6Kx7XQ-unsplash.jpg"
-          alt="AI automation dashboard visualization"
+          alt="Computer terminal photo by Igor Saikin - Unsplash"
           className="object-cover w-full h-full"
               />
         <div className="absolute inset-0 bg-black/50"></div>
