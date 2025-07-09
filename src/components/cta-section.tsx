@@ -5,13 +5,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 export default function CtaSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
   const [isClient, setIsClient] = useState(false)
+  const formRef = useRef<HTMLFormElement>(null)
 
   useEffect(() => {
     setIsClient(true)
@@ -23,7 +24,8 @@ export default function CtaSection() {
     setSubmitStatus('idle')
     setErrorMessage('')
 
-    const formData = new FormData(e.currentTarget)
+    const form = e.currentTarget
+    const formData = new FormData(form)
     const data = {
       firstName: formData.get('firstName') as string,
       lastName: formData.get('lastName') as string,
@@ -31,6 +33,8 @@ export default function CtaSection() {
       company: formData.get('company') as string,
       message: formData.get('message') as string,
     }
+
+    console.log('Submitting form data:', data)
 
     try {
       const response = await fetch('/api/contact', {
@@ -41,18 +45,40 @@ export default function CtaSection() {
         body: JSON.stringify(data),
       })
 
+      console.log('Response status:', response.status)
+      console.log('Response ok:', response.ok)
+
       const result = await response.json()
+      console.log('Response data:', result)
 
       if (response.ok) {
-        setSubmitStatus('success')
-        e.currentTarget.reset()
+        if (result.success) {
+          setSubmitStatus('success')
+          // Use the stored form reference instead of e.currentTarget
+          if (formRef.current) {
+            formRef.current.reset()
+          }
+        } else {
+          setSubmitStatus('error')
+          setErrorMessage(result.error || 'Failed to send message')
+        }
       } else {
         setSubmitStatus('error')
-        setErrorMessage(result.error || 'Failed to send message')
+        setErrorMessage(result.error || `Server error: ${response.status}`)
       }
     } catch (error) {
+      console.error('Fetch error:', error)
       setSubmitStatus('error')
-      setErrorMessage('Network error. Please try again.')
+      
+      if (error instanceof Error) {
+        if (error.message.includes('Failed to fetch')) {
+          setErrorMessage('Network error - please check your connection and try again.')
+        } else {
+          setErrorMessage(`Error: ${error.message}`)
+        }
+      } else {
+        setErrorMessage('Unknown error occurred. Please try again.')
+      }
     } finally {
       setIsSubmitting(false)
     }
@@ -109,7 +135,7 @@ export default function CtaSection() {
                     </Button>
                   </div>
                 ) : (
-                  <form className="grid gap-4" onSubmit={handleSubmit}>
+                  <form ref={formRef} className="grid gap-4" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="first-name">First name</Label>
@@ -147,7 +173,7 @@ export default function CtaSection() {
                     
                     {submitStatus === 'error' && (
                       <div className="text-red-600 text-sm">
-                        {errorMessage || 'Failed to send message. Please try again.'}
+                        {errorMessage}
                       </div>
                     )}
                     
