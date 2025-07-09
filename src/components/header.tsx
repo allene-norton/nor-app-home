@@ -7,7 +7,11 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6 md:gap-10">
           <Link href="/" className="flex items-center space-x-2">
-            <img src="/placeholder.svg?height=40&width=40" alt="AutomateAI Logo" className="h-10 w-10" />
+            <img
+              src="/nalogo3.png"
+              alt="Norton Applications Logo"
+              className="h-16 w-auto"
+            />
           </Link>
           <nav className="hidden gap-6 md:flex">
             <Link href="/#services" className="text-sm font-medium transition-colors hover:text-primary">
@@ -22,8 +26,14 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="font-medium bg-transparent">
-            Client Portal
+          <Button
+            variant="outline"
+            className="font-medium bg-transparent"
+            asChild
+          >
+            <a href="https://clients.nortonapplications.com" target="_blank" rel="noopener noreferrer">
+              Client Portal
+            </a>
           </Button>
         </div>
       </div>
