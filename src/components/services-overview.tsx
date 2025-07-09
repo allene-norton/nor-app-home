@@ -5,12 +5,6 @@ import Link from "next/link"
 export default function ServicesOverview() {
   const services = [
     {
-      icon: <FileText className="h-10 w-10 text-primary" />,
-      title: "Document Automation",
-      description: "Automate document creation, processing, and management with AI-powered tools.",
-      path: "/services/document-automation",
-    },
-    {
       icon: <GitMerge className="h-10 w-10 text-primary" />,
       title: "Process Automation",
       description: "Streamline complex business processes with intelligent workflow automation.",
@@ -41,9 +35,9 @@ export default function ServicesOverview() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">AI Tools & Technologies</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Automate. Optimize. Grow.</h2>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Leverage cutting-edge AI solutions to transform your business operations
+              Leverage cutting-edge solutions to transform your business operations
             </p>
           </div>
         </div>

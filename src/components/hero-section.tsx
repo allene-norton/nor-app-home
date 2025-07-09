@@ -8,18 +8,17 @@ export default function HeroSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                AI Automation for Modern Businesses
+                Automation and Development for Modern Businesses
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Transform your operations with intelligent automation solutions that save time, reduce errors, and drive
-                growth.
+                Streamline your business with smart automation and custom web apps— boost efficiency, reduce errors, accelerate growth.
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            {/* <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" variant="outline">
                 Learn More
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="flex items-center justify-center">
             <div className="relative h-[350px] w-full overflow-hidden rounded-lg">

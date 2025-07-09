@@ -2,14 +2,16 @@ import HeroSection from "@/components/hero-section"
 import ServicesOverview from "@/components/services-overview"
 import ProcessSection from "@/components/process-section"
 import CtaSection from "@/components/cta-section"
+import PlatformIntegrations from "@/components/platform-integrations"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <HeroSection />
       <ServicesOverview />
+      <PlatformIntegrations />
       <ProcessSection />
       <CtaSection />
-    </main>
+    </div>
   )
 }

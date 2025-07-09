@@ -1,3 +1,4 @@
+'use client'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -15,7 +16,7 @@ export default function CtaSection() {
                 Streamline your business with automations
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Ready to transform your business operations? Contact us to learn how our AI automation solutions can
+                Ready to transform your business operations? Contact us to learn how our automation and custom development solutions can
                 help you save time, reduce errors, and drive growth.
               </p>
             </div>

@@ -10,16 +10,13 @@ export default function Header() {
             <img src="/placeholder.svg?height=40&width=40" alt="AutomateAI Logo" className="h-10 w-10" />
           </Link>
           <nav className="hidden gap-6 md:flex">
-            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-              About
-            </Link>
-            <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#services" className="text-sm font-medium transition-colors hover:text-primary">
               Services
             </Link>
-            <Link href="#process" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#process" className="text-sm font-medium transition-colors hover:text-primary">
               Process
             </Link>
-            <Link href="#cta" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/#cta" className="text-sm font-medium transition-colors hover:text-primary">
               Contact
             </Link>
           </nav>
