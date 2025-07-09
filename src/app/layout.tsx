@@ -13,9 +13,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "AI Automation Solutions for Modern Businesses",
-  description: "Streamline your business with cutting-edge AI automation solutions",
-    generator: 'v0.dev'
+  title: "Norton Applications",
+  description: "Business automation and custom development solutions",
 }
 
 export default function RootLayout({
@@ -24,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
