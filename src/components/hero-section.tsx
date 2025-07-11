@@ -20,7 +20,7 @@ export default function HeroSection() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-white">
               Automation and Development for Modern Businesses
             </h1>
-            <p className="max-w-[800px] text-xl md:text-2xl text-gray-200">
+        <p className="max-w-[800px] mx-auto text-xl md:text-2xl text-gray-200">
               Streamline your business with smart automation and custom web apps— boost efficiency, reduce errors, accelerate growth.
             </p>
       </div>
