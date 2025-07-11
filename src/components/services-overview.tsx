@@ -50,9 +50,9 @@ export default function ServicesOverview() {
                   <div className="flex-1 space-y-2">
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                     <CardDescription className="text-base">{service.description}</CardDescription>
-                    <Link href={service.path} className="inline-block text-sm font-medium text-primary hover:underline">
+                    {/* <Link href={service.path} className="inline-block text-sm font-medium text-primary hover:underline">
                       Learn more
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </CardContent>
