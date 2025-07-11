@@ -14,7 +14,7 @@ export default function Footer() {
               Maximizing productivity with smart automation systems.
             </p>
             <div className="flex space-x-2">
-              <Link href="#" className="text-gray-500 hover:text-primary dark:text-gray-400">
+              <Link href="https://www.linkedin.com/company/norton-applications-llc" className="text-gray-500 hover:text-primary dark:text-gray-400">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
