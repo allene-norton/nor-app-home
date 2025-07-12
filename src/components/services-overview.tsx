@@ -1,26 +1,44 @@
-import { FileText, GitMerge, Share2, MessageSquare, Code } from "lucide-react"
+import { MessageSquare, Code, PersonStanding, ClipboardType, FolderCheck, CircleDollarSign, SquareCheckBig } from "lucide-react"
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 
 export default function ServicesOverview() {
   const services = [
     {
-      icon: <GitMerge className="h-10 w-10 text-primary" />,
-      title: "Process Automation",
-      description: "Streamline complex business processes with intelligent workflow automation.",
+      icon: <PersonStanding className="h-10 w-10 text-primary" />,
+      title: "Client Onboarding Automation",
+      description: "Streamline client onboarding processes with intelligent workflow automation.",
       path: "/services/process-automation",
     },
     {
-      icon: <Share2 className="h-10 w-10 text-primary" />,
-      title: "Social Media Automation",
-      description: "Optimize your social media presence with AI-driven content and scheduling.",
-      path: "/services/social-media-automation",
+      icon: <ClipboardType className="h-10 w-10 text-primary" />,
+      title: "Forms and Contracts Automation",
+      description: "Streamline sending forms, digital signatures, and automated approval workflows.",
+      path: "/services/forms-contracts-automation",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
       title: "Communication Automation",
       description: "Enhance customer interactions with automated messaging and response systems.",
       path: "/services/communication-automation",
+    },
+    {
+      icon: <FolderCheck className="h-10 w-10 text-primary" />,
+      title: "File Sharing Automation",
+      description: "Streamline document workflows with automated file sharing and syncing.",
+      path: "/services/file-automation",
+    },
+    {
+      icon: <CircleDollarSign className="h-10 w-10 text-primary" />,
+      title: "Invoicing and Payments Automation",
+      description: "Automate invoice generation, payment processing, and financial reporting to reduce errors and accelerate cash flow.",
+      path: "/services/invoicing-payments-automation",
+    },
+    {
+      icon: <SquareCheckBig className="h-10 w-10 text-primary" />,
+      title: "Project and Task Management Automation",
+      description: "Optimize project workflows with automated task assignment, progress tracking, and deadline management for enhanced productivity.",
+      path: "/services/project-task-automation",
     },
     {
       icon: <Code className="h-10 w-10 text-primary" />,
