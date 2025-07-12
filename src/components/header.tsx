@@ -35,6 +35,14 @@ export default function Header() {
               Client Portal
             </a>
           </Button>
+          <Button
+            className="font-medium bg-[#065d3b] hover:bg-[#065d3b]/90"
+            asChild
+          >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Booking Form
+            </a>
+          </Button>
         </div>
       </div>
     </header>
