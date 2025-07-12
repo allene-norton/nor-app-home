@@ -40,7 +40,7 @@ export default function Header() {
             asChild
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
-              Booking Form
+              Booking Form + Schedule Call
             </a>
           </Button>
         </div>
