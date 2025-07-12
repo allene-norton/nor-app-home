@@ -27,7 +27,7 @@ export default function OnboardingFormPage() {
     <main className="min-h-screen py-12">
       <div className="container px-4 md:px-6">
 
-        <div className="mx-auto max-w-6xl space-y-6">
+        <div className="mx-auto max-w-7xl space-y-6">
           {/* <div className="space-y-2 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">Client Onboarding Form</h1>
             <p className="text-gray-500 md:text-xl dark:text-gray-400">
