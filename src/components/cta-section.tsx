@@ -100,13 +100,12 @@ export default function CtaSection() {
               </p>
             </div>
           </div>
-
           <div className="flex flex-col justify-center space-y-4">
             {/* Action Buttons */}
         <div className="flex flex-col gap-4 items-stretch">
           <Link href="/book-a-call" className="w-full">
             <Button className="w-full bg-[#065d3b] hover:bg-[#064e32] text-white py-4 text-lg">
-                  Book a call
+                  Submit Booking Form + Schedule a Call
                 </Button>
               </Link>
           <span className="text-gray-500 text-sm text-center">or</span>
