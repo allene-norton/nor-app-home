@@ -39,9 +39,9 @@ export default function Header() {
             className="font-medium bg-[#065d3b] hover:bg-[#065d3b]/90"
             asChild
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <Link href="/book-a-call" >
               Booking Form + Schedule Call
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
