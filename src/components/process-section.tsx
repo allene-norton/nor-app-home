@@ -5,13 +5,13 @@ export default function ProcessSection() {
   const steps = [
     {
       icon: <FileText className="h-12 w-12 text-primary" />,
-      title: "Discovery",
+      title: "Intake Form",
       description: "You fill out a quick form about your business and automation needs",
       step: "01",
     },
     {
       icon: <Phone className="h-12 w-12 text-primary" />,
-      title: "Strategy Call",
+      title: "Discovery Call",
       description: "We discuss your goals and current tools in a 30-minute call",
       step: "02",
     },
