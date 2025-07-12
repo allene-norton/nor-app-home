@@ -6,12 +6,14 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect, useRef } from "react"
+import Link from "next/link"
 
 export default function CtaSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
   const [isClient, setIsClient] = useState(false)
+  const [showForm, setShowForm] = useState(false)
   const formRef = useRef<HTMLFormElement>(null)
 
   useEffect(() => {
@@ -54,7 +56,6 @@ export default function CtaSection() {
       if (response.ok) {
         if (result.success) {
           setSubmitStatus('success')
-          // Use the stored form reference instead of e.currentTarget
           if (formRef.current) {
             formRef.current.reset()
           }
@@ -99,95 +100,115 @@ export default function CtaSection() {
               </p>
             </div>
           </div>
-          <div>
-            <Card>
-              <CardHeader>
-                <CardTitle>Contact Us</CardTitle>
-                <CardDescription>Fill out the form below and we'll get back to you within 24 hours.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                {!isClient ? (
-                  <div className="grid gap-4">
-                    <div className="grid grid-cols-2 gap-4">
+
+          <div className="flex flex-col justify-center space-y-4">
+            {/* Action Buttons */}
+        <div className="flex flex-col gap-4 items-stretch">
+          <Link href="/book-a-call" className="w-full">
+            <Button className="w-full bg-[#065d3b] hover:bg-[#064e32] text-white py-4 text-lg">
+                  Book a call
+                </Button>
+              </Link>
+          <span className="text-gray-500 text-sm text-center">or</span>
+              <Button 
+                variant="outline" 
+            className="w-full bg-white hover:bg-gray-50 py-4 text-lg"
+                onClick={() => setShowForm(!showForm)}
+              >
+                Send us a message
+              </Button>
+            </div>
+            {/* Contact Form - Only show when expanded */}
+            {showForm && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Contact Us</CardTitle>
+                  <CardDescription>Fill out the form below and we'll get back to you within 24 hours.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {!isClient ? (
+                    <div className="grid gap-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="first-name">First name</Label>
+                          <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="last-name">Last name</Label>
+                          <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
+                        </div>
+                      </div>
                       <div className="space-y-2">
-                        <Label htmlFor="first-name">First name</Label>
+                        <Label htmlFor="email">Email</Label>
                         <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="last-name">Last name</Label>
+                        <Label htmlFor="company">Company</Label>
                         <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
                       </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <div className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <div className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm min-h-[100px]" />
-                    </div>
-                    <Button disabled className="w-full bg-primary hover:bg-primary/90">
-                      Send Message
-                    </Button>
-                  </div>
-                ) : (
-                  <form ref={formRef} className="grid gap-4" onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="first-name">First name</Label>
-                        <Input id="first-name" name="firstName" placeholder="Enter your first name" required />
+                        <Label htmlFor="message">Message</Label>
+                        <div className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm min-h-[100px]" />
+                      </div>
+                      <Button disabled className="w-full bg-primary hover:bg-primary/90">
+                        Send Message
+                      </Button>
+                    </div>
+                  ) : (
+                    <form ref={formRef} className="grid gap-4" onSubmit={handleSubmit}>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="first-name">First name</Label>
+                          <Input id="first-name" name="firstName" placeholder="Enter your first name" required />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="last-name">Last name</Label>
+                          <Input id="last-name" name="lastName" placeholder="Enter your last name" required />
+                        </div>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="last-name">Last name</Label>
-                        <Input id="last-name" name="lastName" placeholder="Enter your last name" required />
+                        <Label htmlFor="email">Email</Label>
+                        <Input id="email" name="email" placeholder="Enter your email" type="email" required />
                       </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" name="email" placeholder="Enter your email" type="email" required />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input id="company" name="company" placeholder="Enter your company name" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        placeholder="Tell us about your automation needs"
-                        className="min-h-[100px]"
-                        required
-                      />
-                    </div>
-                    
-                    {submitStatus === 'success' && (
-                      <div className="text-green-600 text-sm">
-                        Message sent successfully! We'll get back to you within 24 hours.
+                      <div className="space-y-2">
+                        <Label htmlFor="company">Company</Label>
+                        <Input id="company" name="company" placeholder="Enter your company name" />
                       </div>
-                    )}
-                    
-                    {submitStatus === 'error' && (
-                      <div className="text-red-600 text-sm">
-                        {errorMessage}
+                      <div className="space-y-2">
+                        <Label htmlFor="message">Message</Label>
+                        <Textarea
+                          id="message"
+                          name="message"
+                          placeholder="Tell us about your automation needs"
+                          className="min-h-[100px]"
+                          required
+                        />
                       </div>
-                    )}
-                    
-                    <Button 
-                      type="submit" 
-                      className="w-full bg-primary hover:bg-primary/90"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
-                    </Button>
-                  </form>
-                )}
-              </CardContent>
-            </Card>
+                      
+                      {submitStatus === 'success' && (
+                        <div className="text-green-600 text-sm">
+                          Message sent successfully! We'll get back to you within 24 hours.
+                        </div>
+                      )}
+                      
+                      {submitStatus === 'error' && (
+                        <div className="text-red-600 text-sm">
+                          {errorMessage}
+                        </div>
+                      )}
+                      
+                      <Button 
+                        type="submit" 
+                        className="w-full bg-primary hover:bg-primary/90"
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                      </Button>
+                    </form>
+                  )}
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
       </div>
