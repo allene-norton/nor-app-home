@@ -238,7 +238,7 @@ export default function TermsPage() {
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">11.1 Business Hours</h3>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
-                  <li>Standard business hours: Monday - Friday, 9:00 AM - 5:00 PM EST</li>
+                  <li>Standard business hours: Monday - Friday, 11:00 AM - 7:00 PM EST</li>
                   <li>Emergency support available for maintenance clients only</li>
                 </ul>
               </div>
