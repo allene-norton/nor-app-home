@@ -109,6 +109,11 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
           <p>© {new Date().getFullYear()} Norton Aplications LLC. All rights reserved.</p>
+          <p className="mt-2">
+            <Link href="/terms" className="hover:text-primary">
+              Terms and Conditions
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
