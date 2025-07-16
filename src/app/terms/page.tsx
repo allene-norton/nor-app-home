@@ -37,7 +37,7 @@ export default function TermsPage() {
             <section className="space-y-8 pb-8">
               <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">3. Pricing and Payment Terms</h2>
 
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.1 Pricing Structure</h3>
                 <p className="text-sm">Services are provided on either:</p>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
@@ -46,7 +46,7 @@ export default function TermsPage() {
                 </ul>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.2 Project-Based Pricing</h3>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
                   <li>A 50% non-refundable deposit is required upfront before work begins</li>
@@ -55,7 +55,7 @@ export default function TermsPage() {
                 </ul>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.3 Hourly Pricing</h3>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
                   <li>Work is tracked accurately in 15-minute increments</li>
@@ -72,8 +72,17 @@ export default function TermsPage() {
                 </ul>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.4 Payment Terms</h3>
+              <div className="space-y-5">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.4 Communications Terms</h3>
+                <ul className="list-disc pl-6 space-y-2 text-sm">
+                  <li>60 minutes of complementary discovery and strategy calls are included</li>
+                  <li>Additional calls after 60 minutes will be charged at a standard hourly rate, unless otherwise agreed upon.</li>
+                  <li>Post-implementation support calls will be charged at a standard hourly rate, unless included in a retainer. </li>
+                </ul>
+              </div>
+
+              <div className="space-y-5">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.5 Payment Terms</h3>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
                   <li>Invoices are due within 30 days of issuance</li>
                   <li>Late payments may incur a 1.5% monthly service charge</li>
