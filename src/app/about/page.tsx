@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center">
               <div className="relative h-[40%] w-[40%] overflow-hidden rounded-lg">
                 <img
-                src="/messy-office-me.jpeg"
+                src="/me-approachable-2.jpg"
                 alt="Allene Norton"
                 className="object-cover w-full h-full"
               />
