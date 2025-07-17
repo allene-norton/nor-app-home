@@ -20,25 +20,47 @@ export default function AboutPage() {
             <div className="flex flex-col items-center">
               <div className="relative h-[40%] w-[40%] overflow-hidden rounded-lg">
                 <img
-                src="/me-approachable-2.jpg"
-                alt="Allene Norton"
-                className="object-cover w-full h-full"
-              />
-            </div>
+                  src="/me-approachable-2.jpg"
+                  alt="Allene Norton"
+                  className="object-cover w-full h-full"
+                />
+              </div>
 
               <p className="text-gray-500 text-sm text-center mt-0">
-              Allene Norton, Founder
-            </p>
+                Allene Norton, Founder
+              </p>
             </div>
 
             <div className="space-y-6">
               <h2 className="text-2xl font-bold">My Story</h2>
               <p className="text-gray-500 dark:text-gray-400">
-                Previously head of technical support and developer relations at
-                Copilot for over 3 years, I now offer services through my agency
-                and specialize in business automation tools, custom web
+                Previously head of technical support and developer relations at{" "}
+                <a
+                  href="https://copilot.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                >
+                  Copilot
+                </a>{" "}
+                for over 3 years, I now offer services through my agency and
+                specialize in business automation tools, custom web
                 applications, marketing sites, and software configuration in
-                common productivity tools such as Airtable and Notion.
+                common productivity tools such as <a
+                  href="https://airtable.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                >
+                  Airtable
+                </a> and <a
+                  href="https://notion.so"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                >
+                  Notion
+                </a>.
               </p>
 
               <h2 className="text-2xl font-bold">My Misson</h2>
@@ -48,26 +70,34 @@ export default function AboutPage() {
                 implementation and custom web development.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                With 5+ years of experience in in web development (before "vibe
-                coding" became a thing), I have a strong foundational
-                understanding of APIs and software integration, experience with
-                AI-assisted tools and training custom AI chatbots, and have
-                built numerous automations and workflows for many
-                small-to-medium sized service businesses.
+                With 5+ years of experience in in web development, I have a
+                strong foundational understanding of APIs and software
+                integration, experience with AI-assisted tools and training
+                custom AI chatbots, and have built numerous automations and
+                workflows for many small-to-medium sized service businesses.
               </p>
 
               <p className="text-gray-500 dark:text-gray-400">
-                Additionally, I built the public Make integration for Copilot
-                comprised of 100+ triggers and actions, and have a Ialth of
-                experience in building custom apps in{" "}
+                Additionally, I built the public{" "}
                 <a
                   href="https://make.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
                 >
                   Make
-                </a>
-                for businesses looking to share their app integrations with the
+                </a>{" "}
+                integration for{" "}
+                <a
+                  href="https://copilot.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                >
+                  Copilot
+                </a>{" "}
+                comprised of 100+ triggers and actions, leading to a wealth of
+                experience that I can provide for businesses looking to share their app integrations with the
                 public.
               </p>
 
@@ -75,28 +105,80 @@ export default function AboutPage() {
               <ul className="list-disc pl-6 space-y-2 text-gray-500 dark:text-gray-400">
                 <li>
                   Automated workflows that save hours of manual work on
-                  platforms such as Zapier and Make
+                  platforms such as {" "}
+                  <a
+                    href="https://zapier.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Zapier
+                  </a>{" "}
+                  and {" "}
+                  <a
+                    href="https://make.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Make
+                  </a>{" "}
                 </li>
                 <li>Well-designed landing pages and marketing sites</li>
-                <li>Retool apps for rapid internal tool development</li>
+                <li><a
+                    href="https://retool.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-115 transform transition-all duration-200"
+                  >
+                    Retool
+                  </a> apps for rapid internal tool development</li>
                 <li>
                   Expert implementation of productivity platforms and
                   integrations
                 </li>
-                <li>Custom web applications, including Copilot custom apps</li>
                 <li>
-                  Custom app integration builds for businesses looking to
-                  provide their offering on Make
+                  Custom web applications, including {" "}
+                  <a
+                    href="https://copilot.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Copilot
+                  </a>{" "}
+                  custom apps
                 </li>
                 <li>
-                  Top-tier expertise with the Copilot software and integrations
+                  Custom app integration builds for businesses looking to
+                  provide their offering on {" "}
+                  <a
+                    href="https://make.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Make
+                  </a>{" "}
+                </li>
+                <li>
+                  Top-tier expertise with the {" "}
+                  <a
+                    href="https://copilot.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Copilot
+                  </a>{" "}
+                  software and integrations
                 </li>
               </ul>
               <h2 className="text-2xl font-bold">My Approach</h2>
               <p className="text-gray-500 dark:text-gray-400">
                 I believe in building long-term partnerships with my clients,
                 providing ongoing support, optimization, and innovation to
-                ensure your automation solutions continue to deliver value as
+                ensure your automation and development solutions continue to deliver value as
                 your business evolves.
               </p>
 
