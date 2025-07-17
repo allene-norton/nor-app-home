@@ -1,14 +1,18 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function HeroSection() {
   return (
     <section className="relative py-20 md:py-28 h-[75vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/igor-saikin-8LE9Z6Kx7XQ-unsplash.jpg"
+        <Image
+          src="/igor-saikin-8LE9Z6Kx7XQ-unsplash.webp"
           alt="Computer terminal photo by Igor Saikin - Unsplash"
+          fill
           className="object-cover w-full h-full"
+          priority
+          quality={75}
               />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
