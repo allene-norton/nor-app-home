@@ -23,6 +23,9 @@ export default function Header() {
             <Link href="/#cta" className="text-sm font-medium transition-colors hover:text-primary">
               Contact
             </Link>
+            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
+              About
+            </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
