@@ -6,13 +6,10 @@ export default function HeroSection() {
     <section className="relative py-20 md:py-28 h-[75vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/igor-saikin-8LE9Z6Kx7XQ-unsplash.webp"
+        <img
+          src="/igor-saikin-8LE9Z6Kx7XQ-unsplash-comp.webp"
           alt="Computer terminal photo by Igor Saikin - Unsplash"
-          fill
           className="object-cover w-full h-full"
-          priority
-          quality={75}
               />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
