@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -8,76 +8,130 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-3xl space-y-12">
             <div className="space-y-4 text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">About AutomateAI</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+                About Norton Applications
+              </h1>
               <p className="text-gray-500 md:text-xl dark:text-gray-400">
-                Transforming businesses through intelligent automation solutions
+                Transforming businesses through intelligent automation and
+                custom development solutions
               </p>
             </div>
 
-            <div className="relative h-[300px] w-full overflow-hidden rounded-lg">
-              <img
-                src="/placeholder.svg?height=600&width=1200"
-                alt="Our team at work"
+            <div className="flex flex-col items-center">
+              <div className="relative h-[40%] w-[40%] overflow-hidden rounded-lg">
+                <img
+                src="/messy-office-me.jpeg"
+                alt="Allene Norton"
                 className="object-cover w-full h-full"
               />
             </div>
 
+              <p className="text-gray-500 text-sm text-center mt-0">
+              Allene Norton, Founder
+            </p>
+            </div>
+
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold">Our Mission</h2>
+              <h2 className="text-2xl font-bold">My Story</h2>
               <p className="text-gray-500 dark:text-gray-400">
-                At AutomateAI, our mission is to empower businesses of all sizes with cutting-edge automation solutions
-                that drive efficiency, reduce costs, and accelerate growth. We believe that intelligent automation is
-                the key to unlocking the full potential of modern businesses in today's fast-paced digital landscape.
+                Previously head of technical support and developer relations at
+                Copilot for over 3 years, I now offer services through my agency
+                and specialize in business automation tools, custom web
+                applications, marketing sites, and software configuration in
+                common productivity tools such as Airtable and Notion.
               </p>
 
-              <h2 className="text-2xl font-bold">Our Story</h2>
+              <h2 className="text-2xl font-bold">My Misson</h2>
               <p className="text-gray-500 dark:text-gray-400">
-                Founded in 2020, AutomateAI was born from a simple observation: businesses were spending too much time
-                on repetitive tasks and not enough time on strategic growth. Our founders, with backgrounds in AI,
-                software development, and business operations, came together with a shared vision of making powerful
-                automation tools accessible to businesses of all sizes.
+                My mission is to help businesses eliminate manual processes and
+                optimize their operations through strategic technology
+                implementation and custom web development.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                What started as a small team working with local businesses has grown into a comprehensive automation
-                solution provider serving clients across multiple industries. Our journey has been driven by a
-                commitment to innovation, excellence, and client success.
-              </p>
-
-              <h2 className="text-2xl font-bold">Our Approach</h2>
-              <p className="text-gray-500 dark:text-gray-400">
-                We take a consultative approach to every client engagement, starting with a deep understanding of your
-                business processes, challenges, and goals. Our team of experts then designs custom automation solutions
-                that integrate seamlessly with your existing systems and workflows.
-              </p>
-              <p className="text-gray-500 dark:text-gray-400">
-                We believe in building long-term partnerships with our clients, providing ongoing support, optimization,
-                and innovation to ensure your automation solutions continue to deliver value as your business evolves.
+                With 5+ years of experience in in web development (before "vibe
+                coding" became a thing), I have a strong foundational
+                understanding of APIs and software integration, experience with
+                AI-assisted tools and training custom AI chatbots, and have
+                built numerous automations and workflows for many
+                small-to-medium sized service businesses.
               </p>
 
-              <h2 className="text-2xl font-bold">Our Values</h2>
+              <p className="text-gray-500 dark:text-gray-400">
+                Additionally, I built the public Make integration for Copilot
+                comprised of 100+ triggers and actions, and have a Ialth of
+                experience in building custom apps in{" "}
+                <a
+                  href="https://make.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Make
+                </a>
+                for businesses looking to share their app integrations with the
+                public.
+              </p>
+
+              <h2 className="text-2xl font-bold">Expertise</h2>
               <ul className="list-disc pl-6 space-y-2 text-gray-500 dark:text-gray-400">
                 <li>
-                  <strong>Innovation:</strong> We continuously explore new technologies and approaches to deliver
-                  cutting-edge solutions.
+                  Automated workflows that save hours of manual work on
+                  platforms such as Zapier and Make
+                </li>
+                <li>Well-designed landing pages and marketing sites</li>
+                <li>Retool apps for rapid internal tool development</li>
+                <li>
+                  Expert implementation of productivity platforms and
+                  integrations
+                </li>
+                <li>Custom web applications, including Copilot custom apps</li>
+                <li>
+                  Custom app integration builds for businesses looking to
+                  provide their offering on Make
                 </li>
                 <li>
-                  <strong>Excellence:</strong> We hold ourselves to the highest standards in everything we do.
+                  Top-tier expertise with the Copilot software and integrations
+                </li>
+              </ul>
+              <h2 className="text-2xl font-bold">My Approach</h2>
+              <p className="text-gray-500 dark:text-gray-400">
+                I believe in building long-term partnerships with my clients,
+                providing ongoing support, optimization, and innovation to
+                ensure your automation solutions continue to deliver value as
+                your business evolves.
+              </p>
+
+              <h2 className="text-2xl font-bold">My Values</h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-500 dark:text-gray-400">
+                <li>
+                  <strong>Innovation:</strong> I continuously explore new
+                  technologies and approaches to deliver cutting-edge solutions.
                 </li>
                 <li>
-                  <strong>Integrity:</strong> We build trust through honest communication and ethical business
-                  practices.
+                  <strong>Excellence:</strong> I hold ourselves to the highest
+                  standards in everything I do.
                 </li>
                 <li>
-                  <strong>Client Success:</strong> We measure our success by the success of our clients.
+                  <strong>Integrity:</strong> I build trust through honest
+                  communication and ethical business practices.
                 </li>
                 <li>
-                  <strong>Collaboration:</strong> We work closely with our clients as true partners in their success.
+                  <strong>Client Success:</strong> I measure my success by the
+                  success of my clients.
+                </li>
+                <li>
+                  <strong>Collaboration:</strong> I work closely with my clients
+                  as true partners in their success.
                 </li>
               </ul>
             </div>
 
             <div className="flex justify-center pt-6">
-              <Link href="#cta">
+              <p className="text-gray-500 dark:text-gray-400">
+                Ready to transform how your business operates? Let's explore how
+                custom development and smart automation can unlock your team's
+                potential.
+              </p>
+              <Link href="/#cta">
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Get in Touch
                 </Button>
@@ -87,5 +141,5 @@ export default function AboutPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
