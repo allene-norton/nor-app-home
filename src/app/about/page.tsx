@@ -63,14 +63,14 @@ export default function AboutPage() {
                 </a>.
               </p>
 
-              <h2 className="text-2xl font-bold">My Misson</h2>
+              <h2 className="text-2xl font-bold">My Mission</h2>
               <p className="text-gray-500 dark:text-gray-400">
                 My mission is to help businesses eliminate manual processes and
                 optimize their operations through strategic technology
                 implementation and custom web development.
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                With 5+ years of experience in in web development, I have a
+                With 5+ years of experience in web development, I have a
                 strong foundational understanding of APIs and software
                 integration, experience with AI-assisted tools and training
                 custom AI chatbots, and have built numerous automations and
@@ -189,7 +189,7 @@ export default function AboutPage() {
                   technologies and approaches to deliver cutting-edge solutions.
                 </li>
                 <li>
-                  <strong>Excellence:</strong> I hold ourselves to the highest
+                  <strong>Excellence:</strong> I hold myself to the highest
                   standards in everything I do.
                 </li>
                 <li>
