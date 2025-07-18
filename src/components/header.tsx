@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 
@@ -77,6 +77,9 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[250px] sm:w-[300px]">
+              <SheetTitle className="text-lg font-semibold mb-6">
+                Navigation Menu
+              </SheetTitle>
               <nav className="flex flex-col gap-4 mt-8">
                 <Link 
                   href="/#services" 
