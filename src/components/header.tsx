@@ -77,8 +77,8 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[250px] sm:w-[300px]">
-              <SheetTitle className="text-lg font-semibold mb-6">
-                Navigation Menu
+              <SheetTitle className="text-lg font-semibold mb-6 text-[#065d3b]">
+                Norton Applications
               </SheetTitle>
               <nav className="flex flex-col gap-4 mt-8">
                 <Link 
@@ -116,7 +116,7 @@ export default function Header() {
                     onClick={() => setIsOpen(false)}
                   >
                     <Link href="/book-a-call">
-                      Book a Call
+                      Booking Form + Call
                     </Link>
                   </Button>
                 </div>
