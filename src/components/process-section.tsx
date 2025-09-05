@@ -24,7 +24,7 @@ export default function ProcessSection() {
     {
       icon: <Cog className="h-12 w-12 text-primary" />,
       title: "Implementation",
-      description: "We get to work building your automations while keeping you updated",
+      description: "We get to work building your apps and automations while keeping you updated",
       step: "04",
     },
   ]

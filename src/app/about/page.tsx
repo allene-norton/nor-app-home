@@ -103,6 +103,18 @@ export default function AboutPage() {
 
               <h2 className="text-2xl font-bold">Expertise</h2>
               <ul className="list-disc pl-6 space-y-2 text-gray-500 dark:text-gray-400">
+                 <li>
+                  Custom web applications, including {" "}
+                  <a
+                    href="https://copilot.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
+                  >
+                    Copilot
+                  </a>{" "}
+                  custom apps
+                </li>
                 <li>
                   Automated workflows that save hours of manual work on
                   platforms such as {" "}
@@ -136,18 +148,6 @@ export default function AboutPage() {
                 <li>
                   Expert implementation of productivity platforms and
                   integrations
-                </li>
-                <li>
-                  Custom web applications, including {" "}
-                  <a
-                    href="https://copilot.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-700 hover:text-slate-800 hover:scale-105 transform transition-all duration-200"
-                  >
-                    Copilot
-                  </a>{" "}
-                  custom apps
                 </li>
                 <li>
                   Custom app integration builds for businesses looking to

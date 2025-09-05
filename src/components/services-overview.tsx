@@ -5,6 +5,12 @@ import Link from "next/link"
 export default function ServicesOverview() {
   const services = [
     {
+      icon: <Code className="h-10 w-10 text-primary" />,
+      title: "Web Development",
+      description: "Create powerful, custom, embeddable web applications with integrated automation capabilities.",
+      path: "/services/web-development",
+    },
+    {
       icon: <PersonStanding className="h-10 w-10 text-primary" />,
       title: "Client Onboarding Automation",
       description: "Streamline client onboarding processes with intelligent workflow automation.",
@@ -39,13 +45,7 @@ export default function ServicesOverview() {
       title: "Project and Task Management Automation",
       description: "Optimize project workflows with automated task assignment, progress tracking, and deadline management for enhanced productivity.",
       path: "/services/project-task-automation",
-    },
-    {
-      icon: <Code className="h-10 w-10 text-primary" />,
-      title: "Web Development",
-      description: "Create powerful web applications with integrated automation capabilities.",
-      path: "/services/web-development",
-    },
+    }
   ]
 
   return (
