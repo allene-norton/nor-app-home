@@ -92,7 +92,7 @@ export default function CtaSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Streamline your business with automations
+                Streamline your business with automations and custom apps
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Ready to transform your business operations? Contact us to learn how our automation and custom development solutions can
