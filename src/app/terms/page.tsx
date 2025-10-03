@@ -75,8 +75,8 @@ export default function TermsPage() {
               <div className="space-y-5">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">3.4 Communications Terms</h3>
                 <ul className="list-disc pl-6 space-y-2 text-sm">
-                  <li>90 minutes of complementary discovery and strategy calls are included</li>
-                  <li>Additional calls after 90 minutes will be charged at a standard hourly rate, unless otherwise agreed upon.</li>
+                  <li>60 minutes of complementary discovery and strategy calls are included</li>
+                  <li>Additional calls after 60 minutes will be charged at a standard hourly rate, unless otherwise agreed upon.</li>
                   <li>Post-implementation support calls will be charged at a standard hourly rate, unless included in a retainer. </li>
                 </ul>
               </div>
