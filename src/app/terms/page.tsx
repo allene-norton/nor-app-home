@@ -78,6 +78,7 @@ export default function TermsPage() {
                   <li>60 minutes of complementary discovery and strategy calls are included</li>
                   <li>Additional calls after 60 minutes will be charged at a standard hourly rate, unless otherwise agreed upon.</li>
                   <li>Post-implementation support calls will be charged at a standard hourly rate, unless included in a retainer. </li>
+                  <li>Standard rates for consulting without a current project are billed at $60 per hour in 15 minute increments after the first 15 complementary minutes.</li>
                 </ul>
               </div>
 
@@ -257,6 +258,7 @@ export default function TermsPage() {
                 <ul className="list-disc pl-6 space-y-2 text-sm">
                   <li>We will respond to communications within 2 business days</li>
                   <li>Urgent issues will be addressed based on maintenance agreement terms</li>
+                  <li>If no maintenance agreement is in place, maintenance updates will be billed at half the standard rate for the nature of the work as outlined in the initial SOW.</li>
                 </ul>
               </div>
             </section>
